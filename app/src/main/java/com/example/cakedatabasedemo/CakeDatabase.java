@@ -11,7 +11,7 @@ import java.util.concurrent.Executors;
 
 @Database(entities = {Cake.class}, version = 1, exportSchema = false)
 public abstract class CakeDatabase extends RoomDatabase {
-    private abstract CakeDao cakeDao;
+    private  CakeDao cakeDao;
 
     private static volatile CakeDatabase INSTANCE;
     private static final int NUMBER_OF_THREAD = 4;
